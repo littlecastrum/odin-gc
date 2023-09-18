@@ -35,7 +35,6 @@ firstFit :: proc(size: int) -> ^Block {
 
 	for block != nil {
 		// O(n) search.
-		fmt.println("searching...\ncurrent:", block)
 		if block.used || block.size < size {
 			fmt.println("get next block")
 			block = block.next
